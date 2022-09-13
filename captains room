@@ -1,0 +1,7 @@
+import collections
+from collections import Counter
+K=int(input())
+list_room=[int(i) for i in input().split()]
+count=Counter(list_room)
+least_common=collections.Counter(count).most_common()[-1][0]
+print(least_common)
