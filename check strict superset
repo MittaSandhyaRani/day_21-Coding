@@ -1,0 +1,26 @@
+if __name__ == '__main__':
+    set_A = set(map(int, input().split()));
+    n= int(input());
+    total = 0
+    for i in range(n):
+        set_N = set(map(int, input().split()));
+        superset = set_A.issuperset(set_N);
+        if not superset:
+          total+= 1;  
+          break;
+            
+    print(total== 0);
+    
+    orrrrr
+    
+    
+    A = set(input().split(' '))
+SETS = [set(input().split(' ')) for _ in range(int(input()))]
+
+flag = True
+for s in SETS:
+    if len(s.difference(A)) != 0:
+        flag = False
+        break
+
+print(flag)
